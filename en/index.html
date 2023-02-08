@@ -3,15 +3,15 @@
 
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V219MFRFLX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V219MFRFLX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-V219MFRFLX');
-</script>
+        gtag('config', 'G-V219MFRFLX');
+    </script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +19,87 @@
     <title>José Carlos Mourato</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+    <style>
+
+        .mySlides {
+            display: none;
+        }
+
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            background-color: black;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 10px 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .slideshow_img {
+            width: 100%;
+        }
+
+        .active {
+            background-color: red;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -29,31 +110,9 @@
         <!-- categories -->
         <div id="wrapper--techstack__items">
 
-            <!-- last 2 years -->
-            <span>
-                <a href="#last2years" title="Last 2 years">
-                    <div class="card--techstack navbar">
-                        Last 2 years
-                    </div>
-                </a>
-            </span>
-
-            <!-- before that -->
-            <span>
-                <a href="#before_that" title="Before that">
-                    <div class="card--techstack navbar">
-                        Before that
-                    </div>
-                </a>
-            </span>
-
-            <!-- certificates -->
-            <span>
-                <a href="#certificates" title="Certificates">
-                    <div class="card--techstack navbar">Certificates
-                    </div>
-                </a>
-            </span>
+            <span><a href="#chronology" title="Chronology">     <div class="card--techstack navbar">Chronology</div>    </a>    </span>
+            <span><a href="#certificates" title="Certificates"> <div class="card--techstack navbar">Certificates</div>  </a>    </span>
+            <span><a href="#projects" title="Projects">         <div class="card--techstack navbar">Projects</div>      </a>    </span>
 
         </div>
 
@@ -61,22 +120,8 @@
         <div id="wrapper--techstack__languages" style="justify-content: flex-end; padding: 10px 0px 0px 0px;">
 
             <!-- pt, pt -->
-            <span>
-                <a href="../pt/index.html" title="Português, Portugal">
-                    <div class="card--techstack navbar">
-                        🇵🇹
-                    </div>
-                </a>
-            </span>
-
-            <!-- en -->
-            <span style="justify-content: flex-end;">
-                <a style="cursor: default;" title="EN">
-                    <div class="card--techstack" style="border: 2px solid aqua;">
-                        🇬🇧
-                    </div>
-                </a>
-            </span>
+            <span><a href="../pt/index.html" title="Português, Portugal">                       <div class="card--techstack navbar">🇵🇹</div>                              </a>    </span>
+            <span style="justify-content: flex-end;"><a style="cursor: default;" title="EN">    <div class="card--techstack" style="border: 2px solid aqua;">🇬🇧</div>   </a>    </span>
 
         </div>
 
@@ -96,7 +141,7 @@
 
                 <p>
                     👉 <a href="mailto:jose.mourato.22791@formandos.cinel.pt"
-                        title="Email Me">jose.mourato.22791@formandos.cinel.pt</a> 👈
+                          title="Email Me">jose.mourato.22791@formandos.cinel.pt</a> 👈
                 </p>
 
             </div>
@@ -104,10 +149,7 @@
         </section>
 
         <!-- address -->
-        <p style="text-align:right">
-            📍<a href="https://www.google.com/maps/place/Oeiras,+Portugal" title="Residence Area"
-                target="_blank">Oeiras, Portugal</a>
-        </p>
+        <p style="text-align:right">📍<a href="https://www.google.com/maps/place/Oeiras,+Portugal" title="Residence Area" target="_blank">Oeiras, Portugal</a></p>
 
         <!-- social links and cv download -->
         <section class="section--page">
@@ -128,17 +170,11 @@
 
                 <li>✔️ Build software for management of information systems</li>
                 <li>✔️ Plan and design an Information System</li>
-                <li>
-                    ✔️ Create databases to manage and organize information by Database Management Systems (DBMS)
-                    implementation.
-                </li>
+                <li>✔️ Create databases to manage and organize information by Database Management Systems (DBMS) implementation.</li>
                 <li>✔️ Create dynamic web content using multimedia tools and implement them in information systems </li>
 
                 <!-- read more -->
-                <div id="socials--list" style="text-align: right;">
-                    <br>
-                    <a href="skills_qualifications.html" title="Read more">Read more</a>
-                </div>
+                <div id="socials--list" style="text-align: right;"><br><a href="skills_qualifications.html" title="Read more">Read more</a></div>
             </ul>
 
         </section>
@@ -182,15 +218,12 @@
 
             <br>
             <br>
+            <!-- top -->
+            <div id="socials--list" style="text-align: right;"><a href="#top">&#x2191; Top</a></div>
 
         </section>
 
-        <a name="last2years"></a>
-
-        <!-- top -->
-        <div id="socials--list" style="text-align: right;">
-            <a href="#top">&#x2191; Top</a>
-        </div>
+        <a name="chronology"></a>
 
         <!-- last 2 years -->
         <section id="work-history-wrapper" class="section--page">
@@ -211,6 +244,7 @@
             <!-- MOD PDSW -->
             <div class="line-break"></div>
             <div class="card--work-history">
+
                 <strong>👨‍💻 MOD PDSW</strong>
                 <br>
                 <a href="http://www.cinel.pt" target="_blank">@CINEL</a>
@@ -218,14 +252,12 @@
                 <p>Programming of Distributed Systems for Web Environment</p>
                 <p style="text-align: right;"><small>📍Lisbon, Portugal</small></p>
             </div>
+
+            <!-- top -->
+            <div id="socials--list" style="text-align: right;"><a href="#top">&#x2191; Top</a></div>
+
         </section>
 
-        <a name="before_that"></a>
-
-        <!-- top -->
-        <div id="socials--list" style="text-align: right;">
-            <a href="#top">&#x2191; Top</a>
-        </div>
 
         <!-- before that -->
         <section id="work-history-wrapper" class="section--page">
@@ -238,30 +270,32 @@
 
                 <a href="https://www.portugaltrails.com" target="_blank">@Portugal Trails</a><br>
                 <small>2017 • 2020</small><br>
+                <p>Research, structuring, treatment and organization of information in the manner used by the company;</p>
 
-                <p>
-                    Research, structuring, treatment and organization of information in the manner used by the company;
-                </p>
                 <br>
 
                 <p>Type of Business: Travel Agency</p>
+
                 <p style="text-align: right;"><small>📍Cascais, Portugal</small></p>
+
             </div>
 
             <!-- dcv investimentos -->
             <div class="line-break"></div>
             <div class="card--work-history">
-                <strong>🚧 MARKETING DIRECTOR</strong><br>
-
+                <strong>🚧 MARKETING DIRECTOR</strong>
+                <br>
                 @DCV Investimentos<br>
 
                 <small>2014 • 2015</small><br>
 
                 <p>Responsible for the market launch and advertising strategy of the brand mineral water “é bom”.</p>
 
+                <br />
+
                 <p>Type of Business: Bottling and commercialization of mineral water</p>
                 <p style="text-align: right;"><small>📍Luanda, Angola</small></p>
-                <br>
+
             </div>
 
             <!-- importrading -->
@@ -270,9 +304,7 @@
 
                 <strong>🚧 MARKETING DIRECTOR</strong><br>
 
-                <a href="http://www.importrading.com" target="_blank">@Importrading</a>
-                <br>
-
+                <a href="http://www.importrading.com" target="_blank">@Importrading</a><br>
                 <small>2004 • 2014</small><br>
 
                 <br>
@@ -280,10 +312,7 @@
                 <p> • Advertising management of FERMAT brand</p>
                 <p> • Creation of brands for products related to construction and DIY</p>
                 <p> • Presentation of the Group and associated companies at national and international fairs</p>
-                <p>
-                    • Advisor and designer of construction projects for industrial zones belonging to the Group and / or
-                    associated companies
-                </p>
+                <p> • Advisor and designer of construction projects for industrial zones belonging to the Group and / or associated companies</p>
                 <p> • Collaborator of production of the television program “Família Mudamos o Kubico”</p>
                 <p> • Creator and image manager of the motorsport team “Team FERMAT Racing”</p>
                 <p> • Event manager </p>
@@ -300,100 +329,87 @@
                 <p> • ...</p>
 
                 <br>
-                <p>
-                    Type of Business: International business group in the trade, real estate, construction, processing,
-                    transport and some other sectors
-                </p>
+                <p>Type of Business: International business group in the trade, real estate, construction, processing, transport and some other sectors</p>
 
                 <p style="text-align: right;"><small>📍Luanda, Angola</small></p>
-            </div>
-
-        </section>
-
-        <a name="awards_events"></a>
-
-        <!-- top -->
-        <div id="socials--list" style="text-align: right;">
-            <a href="#top">&#x2191; Top</a>
-        </div>
-
-        <!-- some awards and events -->
-        <section class="section--page">
-            <h2>🏆 Some awards and events</h2>
-
-            <div class="card--project">
-                <span>🏆 </span> <a href="constroiAngola05.html">ConstroiAngola 2005</a> • “Best Participation”<br>
-                <small>📍 FILDA, Luanda, Angola</small><br>
-                <br>
-            </div>
-
-            <div class="card--project">
-                <span>📰 </span><a href="modelOfTheWorld2006.html">Model of The World 2006 Tribute Event</a> • 2nd
-                place<br>
-                <small>📍 Luanda, Angola</small><br>
-                <br>
-            </div>
-
-            <div class="card--project">
-                <span>📰 </span><a href="fermatCuca.html">Opening of the fourth FERMAT store</a><br>
-                <small>📍 Luanda, Angola</small><br>
-                <br>
-            </div>
-
-
-            <div class="card--project">
-                <span>🏆 </span><a href="constroiAngola06.html"> ConstroiAngola 2006</a> • “Best Equipment Stand”<br>
-
-                <small>📍 FILDA, Luanda, Angola</small><br>
-                <br>
-            </div>
-
-            <div class="card--project">
-                <span>🏆 </span><a href="christmasShowcase2006.html">
-                    Best material construction store, commercial area and christmas showcase 2006</a><br>
-                <small>Public Tender by Ministério do Comércio, Angola</small><br>
-                <br>
-            </div>
-
-            <div class="card--project">
-                <span>🏆 </span> <a href="constroiAngola10.html">ConstroiAngola 2010</a> • “Best Stand of Construction
-                Materials”<br>
-                <small>📍 FILDA, Luanda, Angola</small><br>
-                <br>
-            </div>
-
-
-        </section>
-
-        <!-- top -->
-        <div id="socials--list" style="text-align: right;">
-            <a href="#top">&#x2191; Top</a>
-        </div>
-
-        <!-- certificates -->
-        <a name="certificates"></a>
-        <section class="section--page">
-            <h2>📜 Certificates</h2>
-
-            <!-- snq certified skills-->
-            <div class="card--project"><a href="certified_skills.html">📜 NQS certified skills</a></div>
-            <!-- other professional training-->
-            <div class="card--project"><a href="other_training.html">📜 Other Professional Training</a></div>
-
-            <!-- google -->
-            <div class="card--project">
-                <p style="text-align:left;">📜 Google Atelier Digital • Marketing Digital<br></p>
-
-                <p style="text-align:left;">
-                    <img id="google_unl" src="../img/profile/google_marketing_digital_01.png" alt="" style="height:150px">
-                    <img id="google_online" src="../img/profile/google_marketing_digital_00.png" alt="" style="height:150px">
-                </p>
             </div>
 
             <!-- top -->
             <div id="socials--list" style="text-align: right;"><a href="#top">&#x2191; Top</a></div>
         </section>
 
+        <a name="awards_events"></a>
+
+        <!-- some awards and events -->
+        <section class="section--page">
+            <h2>🏆 Some awards and events</h2>
+
+            <div class="card--project"><span>🏆 </span>  <a href="constroiAngola05.html">ConstroiAngola 2005</a> • “Best Participation”                                          <br>    <small>Luanda International Fair</small>                        <br>    <p style="text-align: right;"><small>📍Luanda, Angola</small></p>    </div>
+            <div class="card--project"><span>📰 </span>  <a href="modelOfTheWorld2006.html">Model of The World 2006 Tribute Event</a> • 2nd place                                <br>    <small></small>                                                 <br>    <p style="text-align: right;"><small>📍Luanda, Angola</small></p>    </div>
+            <div class="card--project"><span>📰 </span>  <a href="fermatCuca.html">Opening of the 4th FERMAT store</a>                                                           <br>    <small></small>                                                 <br>    <p style="text-align: right;"><small>📍Luanda, Angola</small></p>    </div>
+            <div class="card--project"><span>🏆 </span>  <a href="constroiAngola06.html"> ConstroiAngola 2006</a> • “Best Equipment Stand”                                       <br>    <small>Luanda International Fair</small>                        <br>    <p style="text-align: right;"><small>📍Luanda, Angola</small></p>    </div>
+            <div class="card--project"><span>🏆 </span>  <a href="christmasShowcase2006.html">Best material construction store, commercial area and christmas showcase 2006</a>  <br>    <small>Public Tender by Ministry of Commerce of Angola</small>  <br>    <p style="text-align: right;"><small>📍Luanda, Angola</small></p>    </div>
+            <div class="card--project"><span>🏆 </span>  <a href="constroiAngola10.html">ConstroiAngola 2010</a> • “Best Stand of Construction Materials”                        <br>    <small>Luanda International Fair</small>                        <br>    <p style="text-align: right;"><small>📍Luanda, Angola</small></p>    </div>
+
+            <!-- top -->
+            <div id="socials--list" style="text-align: right;"><a href="#top">&#x2191; Top</a></div>
+
+        </section>
+
+
+        <!-- certificates -->
+        <a name="certificates"></a>
+        <section class="section--page">
+            <h2>📜 Certificates</h2>
+
+            <div class="card--project"><a href="certified_skills.html">📜 NQS certified skills</a>       </div>
+            <div class="card--project"><a href="other_training.html">📜 Other Professional Training</a>  </div>
+
+            <!-- google -->
+            <div class="card--project">
+                <p>📜 Google Atelier Digital • Marketing Digital<br></p>
+
+                <div style="text-align:center;">
+                    <img id="google_unl" src="../img/profile/google_marketing_digital_01.png" alt="" style="height:150px">
+                    <img id="google_online" src="../img/profile/google_marketing_digital_00.png" alt="" style="height:150px">
+                </div>
+            </div>
+
+            <!-- top -->
+            <div id="socials--list" style="text-align: right;"><a href="#top">&#x2191; Top</a></div>
+        </section>
+        <!-- projects -->
+        <a name="projects"></a>
+        <section class="section--page">
+            <h3 style="text-align:center">🚧⚠️ Section under construction ⚠️🚧</h3>
+            <h2>🖥️ Projects</h2>
+
+            <div class="card--project">
+                <div class="slideshow-container">
+                    <div class="mySlides fade"> <a href="../en/projects.html#proj_issabel">      <div class="numbertext">1 / 7</div> <img class="slideshow_img" src="../projects/5114/issabel/issabel.png">              <div class="text">Issabel pbx OS    </div>  </a>    </div>
+                    <div class="mySlides fade"> <a href="../en/projects.html#proj_javascript">   <div class="numbertext">2 / 7</div> <img class="slideshow_img" src="../projects/5414/javascript/01-landing_page.png">   <div class="text">JavaScript        </div>  </a>    </div>
+                    <div class="mySlides fade"> <a href="../en/projects.html#proj_wordpress">    <div class="numbertext">3 / 7</div> <img class="slideshow_img" src="../projects/5415/wordpress/product.png">            <div class="text">WordPress         </div>  </a>    </div>
+                    <div class="mySlides fade"> <a href="../en/projects.html#proj_unity">        <div class="numbertext">4 / 7</div> <img class="slideshow_img" src="../projects/5416/game/lvl1_2.png">                  <div class="text">Unity 3D Game     </div>  </a>    </div>
+                    <div class="mySlides fade"> <a href="../en/projects.html#proj_carshop">      <div class="numbertext">5 / 7</div> <img class="slideshow_img" src="../projects/5417/carshop/01-landing_page.png">      <div class="text">CarShop           </div>  </a>    </div>
+                    <div class="mySlides fade"> <a href="../en/projects.html#proj_5422-news">    <div class="numbertext">6 / 7</div> <img class="slideshow_img" src="../projects/5422/news/news_00.png">                 <div class="text">News              </div>  </a>    </div>
+                    <div class="mySlides fade"> <a href="../en/projects.html#proj_mobile">       <div class="numbertext">7 / 7</div> <img class="slideshow_img" src="../projects/5423/weather/website.png">              <div class="text">WeatherMap        </div>  </a>    </div>
+                </div>
+                <br>
+            </div>
+
+            <div style="text-align:center">
+                <a href="../en/projects.html#proj_issabel">      <span class="dot" title="5114 • Server operating system (proprietary platform)">    </span> </a>
+                <a href="../en/projects.html#proj_javascript">   <span class="dot" title="5414 • Web programming - client (client-side)">            </span> </a>
+                <a href="../en/projects.html#proj_wordpress">    <span class="dot" title="5415 • Web - hypermedia and accessibility">                </span> </a>
+                <a href="../en/projects.html#proj_unity">        <span class="dot" title="5416 • Web - multimedia tools">                            </span> </a>
+                <a href="../en/projects.html#proj_carshop">      <span class="dot" title="5417 • Web programming - server (server-side)">            </span> </a>
+                <a href="../en/projects.html#proj_news">         <span class="dot" title="5422 • Integration of information systems - tools">        </span> </a>
+                <a href="../en/projects.html#proj_mobile">       <span class="dot" title="5423 • Mobile access to information systems">              </span> </a>
+            </div>
+
+            <!-- top -->
+            <div id="socials--list" style="text-align: right;"> <a href="#top" title="Top">&#x2191; Top</a> </div>
+        </section>
     </div>
 
     <!-- The Modal -->
@@ -403,6 +419,7 @@
         <div id="caption"></div>
     </div>
 
+    <!-- certificated -->
     <script>
         // google certificate
         // Get the modal
@@ -446,6 +463,28 @@
 
     </script>
 
+    <!-- automatic slideshow -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>
