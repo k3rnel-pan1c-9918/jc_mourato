@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V219MFRFLX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-V219MFRFLX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖥️ 5417 - README</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <style>
+        #code {
+            color: white;
+            text-align: justify;
+            background-color: black;
+            padding: 5px 10px 5px 10px
+        }
+
+        #ex {
+            color: black;
+            text-align: justify;
+            padding: 0px 10px 0px 10px
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container--main">
+
+        <!-- skills and qualifications -->
+        <h1>🖥️ 5417 • Programação para web - servidor (server-side)</h1>
+
+        <!-- 5417 - carshop -->
+        <section class="section--page">
+
+            <a name="requirements"></a>
+
+            <!-- back -->
+            <div style="text-align: right;"><a href="../pt/projects.html#proj_carshop">&#x2190; Voltar</a></div>
+            <br />
+
+            <!-- requirements -->
+            <div class="card--techstack">
+                <h3>Requisitos </h3>
+
+                <div class="card--techstack" style="background-color:white">
+
+                    <p id="ex">
+                        Propõem-se a conceção de uma aplicação web asp.net de um sistema de informação para uma oficina de automóveis.<br />
+                        <br />
+                        A referida aplicação deverá fazer uso de:<br />
+                        <br />
+                        <b id="code">ASP.NET Core MVC com autenticação</b>
+                        <br />
+                        <br />
+                        <b id="code">
+                            Padrão repository;
+                        </b>
+                        <br />
+                        <br />
+                        <b id="code">
+                            Entity Framework Core
+                        </b>
+                        <br />
+                        <br />
+                        <b id="code">
+                            Base de Dados em SQL Server
+                        </b>
+                        <br />
+                        <br />
+                        <b id="code">Github Repository</b>
+                    </p>
+
+                </div>
+
+                <br />
+
+            </div>
+            <br />
+
+
+            <a name="general_func"></a>
+
+            <!-- back -->
+            <div style="text-align: right;"><a href="../pt/projects.html#proj_carshop">&#x2190; Voltar</a></div>
+            <br />
+
+            <!-- general func -->
+            <div class="card--techstack">
+                <h3>Funcionalidades Gerais </h3>
+
+                <div class="card--techstack" style="background-color:white">
+
+                    <p id="ex">
+                        <b id="code">C R U D</b><br />
+
+                        <br />
+                        <br />
+
+                        Sistema completo de autenticação:<br />
+                        <br />
+                        <b id="code">login && logout</b><br />
+                        <br />
+                        <b id="code">registo de novos utilizadores</b><br />
+                        <br />
+                        <b id="code">recuperação de password por email</b><br />
+                        <br />
+                        <b id="code">...</b><br />
+
+                        <br />
+                        <br />
+
+                        Criação de Roles com um mínimo de 4 tipos de utilizadores<br />
+                        <br />
+                        <b id="code">admin</b><br />
+                        <br />
+                        <b id="code">staff</b><br />
+                        <br />
+                        <b id="code">client</b><br />
+                        <br />
+                        <b id="code">anon</b><br />
+
+                        <br />
+                        <br />
+
+                        A aplicação deverá estar funcional e online quando for testada e apresentada<br />
+                        <br />
+                        A aplicação não pode em caso algum rebentar nem mostrar os ecrãs de erros de desenvolvimento, devendo criar todas as views para a gestão de erros e conflitos dos CRUD’s.<br />
+                        <br />
+                        Sistema de front-end original e adaptado ao projeto.
+                    </p>
+
+                </div>
+
+                <br />
+
+            </div>
+
+            <br />
+
+            <a name="spec_func"></a>
+
+            <!-- back -->
+            <div style="text-align: right;"><a href="../pt/projects.html#proj_carshop">&#x2190; Voltar</a></div>
+            <br />
+
+            <!-- spec func -->
+            <div class="card--techstack">
+                <h3>Funcionaidades Especificas </h3>
+
+                <div class="card--techstack" style="background-color:white">
+
+                    <p id="ex">
+                        Implementação de módulos:<br />
+                        <br />
+                        <b id="code">
+                            Veículos
+                        </b><br />
+                        <br />
+                        <b id="code">
+                            Clientes
+                        </b><br />
+                        <br />
+                        <b id="code">
+                            Mecânicos
+                        </b><br />
+                        <br />
+                        <b id="code">
+                            Reparação
+                        </b><br />
+                        <br />
+                        <b id="code">
+                            Faturação
+                        </b><br />
+                        <br />
+                        <b id="code">
+                            Marcações
+                        </b><br />
+
+                        <br />
+                        <br />
+
+                        Deverá ser também implementado um módulo de Comunicações com as seguintes funcionalidades:<br />
+                        <br />
+                        &emsp;• Enviar email para todos os clientes, avisando por exemplo, que a oficina vai estar fechada;<br /><br />
+                        &emsp;• Enviar email a relembrar marcação para o dia seguinte;<br /><br />
+                        &emsp;• Enviar email a desmarcar marcações de um determinado mecânico.<br /><br />
+                        <br />
+                        O administrador do sistema apenas gere os restantes utilizadores (funcionários e clientes), criando-lhes as contas para estes posteriormente poderem entrar na plataforma.<br />
+                        <br />
+                        Irá também disponibilizar as diferentes especialidades de cada mecânico bem como das diferentes marcas e modelos de Viaturas.<br />
+                        <br />
+                        Atenção que no processo de criação da conta, qualquer utilizador criado no ponto anterior, irá receber primeiro um email onde deverá alterar a sua password.<br />
+                        <br />
+                        Deverá também haver um funcionário (rececionista), que irá marcar as reparações mediante a disponibilidade de horários.<br />
+                        <br />
+                        Finalmente irão existir os clientes e os seus veículos, onde estes poderão efetuar todo o tipo de consultas referente ao histórico das suas reparações por viatura.<br />
+                        <br />
+                        Os utilizadores anónimos apenas podem consultar os mecânicos e ofertas disponíveis.
+                    </p>
+
+                    <br />
+
+                    <table id="code" style="width:100%">
+                        <thead>
+                            <tr style="text-align:center">
+                                <th>Funcionalidades</th>
+                                <th>admin</th>
+                                <th>staff</th>
+                                <th>client</th>
+                                <th>anon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Login</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+                            </tr>
+                            <tr>
+                                <td>Criar e adicionar users</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">❌</td>
+                            </tr>
+                            <tr>
+                                <td>CRUD Mecanicos e recepcionistas</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">❌</td>
+                            </tr>
+                            <tr>
+                                <td>CRUD Reparações</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">❌</td>
+                            </tr>
+                            <tr>
+                                <td>CRUD Clientes e Vehiculos</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">❌</td>
+                            </tr>
+                            <tr>
+                                <td>Marcação e Facturação</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">❌</td>
+                            </tr>
+                            <tr>
+                                <td>Editar User Profile</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+                            </tr>
+                            <tr>
+                                <td>Recuperar password</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+                            </tr>
+                            <tr>
+                                <td>Histórico de serviço</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+
+                            </tr>
+                            <tr>
+                                <td>Editar dados dos vehiculos</td>
+                                <td style="text-align:center">❌</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">❌</td>
+
+                            </tr>
+                            <tr>
+                                <td>Horários, ofertas, ...</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+                                <td style="text-align:center">✔️</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <br />
+
+            </div>
+
+            <br />
+
+            <a name="other_aspects"></a>
+
+            <!-- back -->
+            <div style="text-align: right;"><a href="../pt/projects.html#proj_carshop">&#x2190; Voltar</a></div>
+            <br />
+
+
+
+            <!-- other aspects -->
+            <div class="card--techstack">
+                <h3>Outros aspectos</h3>
+
+                <div class="card--techstack" style="background-color:white">
+
+                    <p id="ex">
+                        Todos os utilizadores, com exceção dos anónimos, deverão ter a possibilidade de ter foto de perfil.<br />
+                        <br />
+                        O funcionário, quando se autentica, deverá ser direcionado para um dashboard onde aparecem os alertas lançados.<br />
+                        <br />
+                        Todos os veículos deverão ter um histórico de com todas as intervenções que pode ser consultado online pelo cliente.<br />
+                        <br />
+                        Deverá haver o respeito por não apagar e atualizar em cascata, sendo necessária a comunicação entre os diversos utilizadores.<br />
+                        <br />
+                        Deverá também ser criada e publicada uma web API que envie todas as intervenções de um determinado veículo.<br />
+                    </p>
+
+                </div>
+
+                <br />
+
+            </div>
+            <br />
+            <!-- back -->
+            <div style="text-align: right;"><a href="../pt/projects.html#proj_carshop">&#x2190; Voltar</a></div>
+        </section>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

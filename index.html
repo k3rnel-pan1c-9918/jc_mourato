@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V219MFRFLX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-V219MFRFLX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo / Welcome</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(img/background.jpg);
+            background-color: #242424;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .card-container {
+            background-color: rgb(80, 80, 80);
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+            color: #B3B8CD;
+            padding-top: 30px;
+            position: relative;
+            width: 350px;
+            max-width: 100%;
+            text-align: center;
+        }
+
+            .card-container .pro {
+                color: #231E39;
+                background-color: rgba(172, 255, 47, 0.747);
+                border-radius: 3px;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 3px 7px;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+            .card-container .round {
+                border: 1px solid #03BFCB;
+                border-radius: 50%;
+                padding: 7px;
+            }
+
+        .skills {
+            text-align: center;
+            background-color: dimgray;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 20px;
+        }
+
+            .skills ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+                .skills ul li {
+                    border: 1px solid #2D2747;
+                    border-radius: 5px;
+                    display: inline-block;
+                    margin: 5px 5px 5px 5px;
+                    padding: 5px 5px 0px 4px;
+                    background-color: rgba(0, 0, 0, 0.486);
+                }
+    </style>
+
+    <div class="card-container">
+        <span class="pro">Junior</span>
+
+        <a href="mailto:jose.mourato.22791@formandos.cinel.pt" title="Email me">
+            <img class="round" style="height: 127px; width: auto;" src="img/profile/profile_pic.jpg" />
+        </a>
+
+        <h2>José Carlos Mourato</h2>
+
+        <p style="text-align: right;">
+            <small>📍<a href="https://www.google.com/maps/place/Oeiras,+Portugal" title="I'm from here" target="_blank">Oeiras, Portugal</a>&emsp;&emsp;</small>
+        </p>
+
+        <p style="color:greenyellow">
+            Full-Stack Developer<br>
+            <br><small style="color:gainsboro;">Information Systems <br>Technologies and Programming</small>
+            <br>
+            <br>
+        </p>
+
+        <div>
+            <a href="pt/index.html" title="Portugês, Portugal">
+                <img class="round" style="height: 50px; width: auto;"
+                     src="img/flag-pt.png" alt="PT" />
+            </a>&emsp;
+            <a href="en/index.html" title="English">
+                <img class="round" style="height: 50px; width: auto;"
+                     src="img/flag-uk.png" alt="EN" />
+            </a>
+        </div>
+
+        <div class="skills">
+            <ul>
+                <li><img id="logos_index" title="asp.net Core" src="img/logos/dotnet.svg" /> </li>
+                <li><img id="logos_index" title="C Sharp" src="img/logos/c_sharp.svg" /></li>
+                <li><img id="logos_index" title="HTML 5" src="img/logos/html.svg" /></li>
+                <li><img id="logos_index" title="CSS 3" src="img/logos/css3.svg" /> </li>
+                <li><img id="logos_index" title="JavaScript" src="img/logos/javascript.svg" /></li>
+                <li><img id="logos_index" title="Micrsoft SQL Server" src="img/logos/slq.png" /></li>
+                <li><img id="logos_index" title="Java" src="img/logos/java.svg" /></li>
+                <li><img id="logos_index" title="Adobe Photoshop" src="img/logos/adobe_photoshop_cs6.svg" /></li>
+                <li><img id="logos_index" title="Adobe Illustrator" src="img/logos/adobe_illustrator_cs6.svg" /></li>
+                <li><img id="logos_index" title="Sketchup" src="img/logos/sketchup.png" /></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+
+    /* dark mode (default) */
+    --mainTextColor: #fff;
+    --secondaryTextColor: #adb0b1;
+    --mainLinkColor:
+        /* #03BFCB */
+        aqua;
+    --mainBorderColor: #2b3031;
+    --mainBgColor: #242424;
+
+}
+
+* {
+    font-family: 'Source Code Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}
+
+body {
+    background-color: var(--mainBgColor);
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button {
+    color: #131415;
+}
+
+p,
+span,
+li {
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 300;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+#container--main {
+    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 717px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+#container--news {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+
+.section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#bio a {
+    font-weight: 300;
+}
+
+#user-name {
+    font-size: 32px;
+    line-height: 1em;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px aqua solid;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#logos {
+    width: auto;
+    height: 50px;
+    object-fit: cover;
+}
+
+#logos_index {
+    width: auto;
+    height: 30px;
+    object-fit: cover;
+}
+
+#email {
+    color: var(--mainTextColor);
+}
+
+#socials--list {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a {
+    font-weight: 300;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#socials--list a:hover {
+    font-weight: 100;
+    color: greenyellow;
+    font-size: 0.9em;
+}
+
+#qualifications--list {
+    list-style: none;
+}
+
+#qualifications--list {
+    list-style: none;
+}
+
+#wrapper--techstack__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.8em;
+}
+
+#wrapper--techstack__languages {
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack {
+    border: 1px solid aqua;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.card--techstack_right {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+
+}
+
+.card--work-history {
+    border-left: 1px solid gray;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line-break {
+    background-color: gray;
+    height: 1px;
+}
+
+
+.card--project {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid gray;
+}
+
+.card--project a {
+    font-weight: 300;
+    color: var(--mainLinkColor);
+    transition: 0.3s;
+}
+
+.card--project a:hover {
+    font-weight: 300;
+    color: var(--mainLinkColor);
+    color: greenyellow;
+}
+
+#translation {
+    background-color: white;
+    padding: 10px;
+}
+
+.navbar{
+    color: aqua;
+}
+
+.navbar:hover {
+    color: greenyellow;
+    background-color: rgba(0, 255, 255, 0.308);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed
+    background-color: rgb(0, 0, 0);*/
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.709);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 60%;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 0px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--mainLinkColor);
+    text-decoration: none;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 100%) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media(max-width:600px) {
+
+    .section--page {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #wrapper--hero {
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    #profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .card--work-history {
+        border-left: none;
+        padding-left: 0;
+    }
+}
